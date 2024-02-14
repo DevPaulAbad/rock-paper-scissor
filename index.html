@@ -8,21 +8,39 @@
     </title>
 </head>
 <body>
-    <h1>Rock, Paper, and Scissors</h1>
-    <div class="container">
-        <!-- <input type="button" name="rock" value="rock" placeholder="Rock">
-        <input type="button" name="paper" value="paper" placeholder="Paper">
-        <input type="button" name="scissor" value="scissor" placeholder="Scissors"> -->
-        <button type="button" id="paperbtn" onclick="getPlayerchoice('paper')">Paper</button>
-        <button type="button" id="scissorbtn" onclick="getPlayerchoice('scissor')">Scissor</button>
-        <button type="button" id="rockbtn" onclick="getPlayerchoice('rock')">Rock</button>
+    <header>
+        <div class="logo">
+            <img src="assets/rps.png" alt="">
+            <p>Rock, Paper, and Scissors</p>
+        </div>
+        <div class="space"></div>
+        
+    </header>
+    <div class="body2">
+        <p>Play Round</p>
+        <div id="winner">
+            <h2 id="Winner"></h2>
+            <h3 id="computer"></h3>
+        
+            <h2 id="round"></h2>
+            <h2 id="playerScore"></h2>
+        </div>
+        
+        <div class="container">      
+            <button type="button" id="rockbtn" class="btns" onclick="getPlayerchoice('rock')"><img src="assets/rock.png" alt="rock"></button>
+            <button type="button" id="paperbtn" class="btns" onclick="getPlayerchoice('paper')"><img src="assets/paper.png" alt="paper"></button>
+            <button type="button" id="scissorbtn" class="btns" onclick="getPlayerchoice('scissor')"><img src="assets/scissors.png" alt="scissor"></button>        
+        </div>
     </div>
 
-    <h2 id="Winner"></h2>
-    <h3 id="computer"></h3>
 
-    <h2 id="round"></h2>
-    <h2 id="playerScore"></h2>
+    <footer>
+        <p>2024</p>
+    </footer>
+
+    
+
+    
     
 </body>
 </html>
